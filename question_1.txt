@@ -1,0 +1,15 @@
+For this question I first assume the models are created in dbt. 
+As we have 3 tables, I would first propose to create a staging model for each table. 
+In these staging models, I would suggest to rename columns according to dbt best practices. 
+For example, I would change the names of the "id" columns. I would change "id" in the ad table to ad_id, 
+"id" in the event table to event_id, and id in the event_location table to event_location_id. In the ad table, there is also
+a column named created_at, I would also rename this in the staging model for the ad table, and I would rename this to ad_created_at. 
+I would also change the name of the column event_start to event_start_date.
+Then, after creating the schemas in dbt and adding the neccesary documentation, I would then propose to create an intermediate model,
+that joins the staging model for events, and the staging model for ads. I think this model could be used for marketing purposes, and
+therefore it could also be used in different marts. I would use a left join on the events,
+joining on event_id from the events staging model and event_id from the ads staging model.
+Then, I would propose to create a mart. In this mart, I would create one big table. I would use the staging model for the event_location 
+table, and I would use the intermediate model that is mentioned above. I would use a left join on the intermediate model, 
+and join on location_id.
+This table could be useful for future queries, as it would have all information in one big table. 
