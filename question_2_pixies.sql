@@ -17,7 +17,7 @@ WITH pixies_events AS (
 
     )
 
-/*The next part of the code joins the our results with the ad table.
+/*The next part of the code joins the results with the ad table.
 I use a left join to ensure that we do not miss any results from the events table.*/
 
 SELECT
