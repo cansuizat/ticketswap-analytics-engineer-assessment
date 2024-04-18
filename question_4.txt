@@ -1,0 +1,21 @@
+I assume there is data on the users, I would then suggest to add an additional
+column for the users table. This coulumn would be a boolean, and it can be named is_payment_saved.
+It would be based on the users data, and we can model this easily with a case statement about 
+the payment information. Then, this boolean can be used to create a button for the 'one click checkout'.
+I would collaborate with the software engineers for this. I think that the one click checkout should 
+only be visible when a user is logged in, so I would suggest this to the Product Manager and 
+the development team. I would also suggest to add a small text on the website for users that do not have their 
+payment details saved, and this would be something such as "Save your payment details now to activate
+One Click Checkout!", and there could be a hover feature on this text that explains what the one click
+checkout is. This text can also be a button that leads to the payment page when clicked on.
+Again, a user would only see this text when logged in. I would also ask the development
+team to track each time the one click checkout button is clicked. 
+
+When the feature is launched, I would wait a month to determine if it is successful. 
+I would check the data on how many tickets were sold since the launch of the new feature, and how many of these
+tickets were purchased using the one click checkout. I would also check how many users saved their payment information
+after the new feature was launched. I would check the data about the one click checkout to see if 
+there is an upward trend of users using this feature at the end of the month compared to the beginning of the month. I would 
+take all of these points into consideration to determine if the feature is successful. I would also check how the team measures success
+for previous features, and I would compare the percentages of users that used the one click feature after a month of its 
+launch, to the percentage of users that used a different feature after a month of that feature's launch.
